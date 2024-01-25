@@ -56,13 +56,13 @@ public class PigLatin {
             }
         }
         
-                for(int i = 0; i < n.length(); i++){
+                for(int i = 0; i < sWord.length(); i++){
       int l = 0;
       for(int o = 0; o < vowels.length; o++){
-        if(n.charAt(i) == vowels[o]){
+        if(sWord.charAt(i) == vowels[o]){
           l = i;
           System.out.println("l = " + l);
-          return(n.substring(l, n.length()) + n.substring(0, l) + "ay"); 
+          return(sWord.substring(l, sWord.length()) + sWord.substring(0, l) + "ay"); 
         }      
       } 
     }
