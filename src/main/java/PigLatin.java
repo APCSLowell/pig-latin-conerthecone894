@@ -3,6 +3,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class PigLatin {
+    char[] vowels = {'a', 'e', 'i', 'o', 'u'};
     
     public void tester() {
         // String[] lines = loadStrings("words.txt");
