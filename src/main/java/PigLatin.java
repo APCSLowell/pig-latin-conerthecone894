@@ -56,12 +56,18 @@ public class PigLatin {
             }
         }
         
-            for(int i = 0; i < vowels.length; i++){
-      if(sWord.charAt(1) == vowels[i]){return sWord.substring(1, sWord.length()) + sWord.substring(0, 1) + "ay";}
+                for(int i = 0; i < n.length(); i++){
+      int l = 0;
+      for(int o = 0; o < vowels.length; o++){
+        if(n.charAt(i) == vowels[o]){
+          l = i;
+          System.out.println("l = " + l);
+          return(n.substring(l, n.length()) + n.substring(0, l) + "ay"); 
+        }      
+      } 
     }
-    //code for starting in only one consonant
+    //code for starting with a consonant
     
-    return(sWord.substring(2, sWord.length())+ sWord.substring(0, 2) + "ay");
-    //if not any other cases, it's a word that starts w/ two consonants.
+    return ("if all else fails");
     }
 }
